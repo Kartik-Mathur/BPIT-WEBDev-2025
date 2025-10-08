@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Page</title>
+</head>
+
+<body>
+
+    <!-- URL sends GET request(Data lekar aati hai yeh) by default -->
+    <!-- Google: https://www.google.com/search?q=kartik -->
+    <!-- Bing: https://www.bing.com/search?q=modi -->
+
+    <!-- Form is to take input from the user -> Dynamic data pass kr skte -->
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" placeholder="Type to Search" name="q">
+        
+        <button type="submit">Search Google</button>
+    </form>
+
+    <form action="https://www.bing.com/search" method="GET">
+        <input name="q" type="text" placeholder="Type to Search">
+
+        <button type="submit">Search Bing</button>
+    </form>
+
+
+</body>
+
+</html>
