@@ -1,0 +1,21 @@
+.div-1{
+    border: 2px solid black;
+    /* padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 30px; */
+    /* Top right bottom left */
+    /* padding: 10px 20px 30px 40px;  */
+    
+    /* Top&Bottom Left&Right */
+    /* padding: 30px 40px; */
+
+    /* Padding on all sides at one time.. */
+    padding: 40px;
+    
+    margin-bottom: 20px;
+}
+
+.div-2{
+    border: 2px solid red;
+}
