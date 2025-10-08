@@ -1,0 +1,19 @@
+/* ID SELECTOR */
+#span {
+    border: 3px dotted green;
+}
+
+#span {
+    border: 3px dotted red;
+}
+
+/* Class Selector */
+.span {
+    border: 1px dashed black;
+}
+
+/* Element Selector */
+span {
+    /* border: Thickness type color */
+    border: 3px solid purple !important;
+}
