@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            /* height: 300px; */
+            border-bottom: 1px solid #ccc;
+            /* background-color: aqua; */
+            width: 75%;
+            margin: auto;
+        }
+
+        .section-a,
+        .section-b {
+            height: 300px;
+        }
+        
+
+        .section-a {
+            /* background-color: orange; */
+            float: right;
+            width: 29%;
+        }
+
+        .section-b {
+            /* background-color: purple; */
+            float: left;
+            width: 70%;
+        }
+        /* CLEAR FIX for floats using another element */
+        .float-fix{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section-a">
+            <img style="height: 100%;" src="https://cdn.pixabay.com/photo/2017/01/19/09/11/logo-google-1991840_1280.png" alt="Google Logo Image showcasing the colorful logo of google">
+        </div>
+        
+        <div class="section-b" style="font-size: 20px; align-content: center;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptas, quidem voluptates temporibus aperiam autem quis ipsum harum, at quas fuga velit nostrum labore culpa enim possimus pariatur perferendis laudantium officia eveniet delectus placeat, praesentium alias nulla. Nihil assumenda voluptatum, voluptate ut labore consequatur repudiandae ratione suscipit voluptas adipisci cumque veniam vitae dolorum veritatis deserunt, commodi quidem. Ex commodi laboriosam facilis ab et repellat odit hic cumque ducimus. Delectus facilis repudiandae enim ex nam vitae dignissimos, a laudantium error temporibus molestiae eligendi voluptate necessitatibus soluta! Aperiam, quibusdam itaque odit repudiandae reiciendis, soluta consectetur tenetur totam corporis, rerum nostrum illum dignissimos?
+        </div>
+
+        <div class="float-fix"></div>
+    </div>
+</body>
+
+</html>

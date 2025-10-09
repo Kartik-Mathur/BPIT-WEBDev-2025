@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <style>
+        html{
+            font-size: 10px;
+        }
+
+        body {
+            /* 10px */
+            font-size: 1rem;
+        }
+
+        .parent {
+            /* 12px */
+            font-size: 1.2rem;
+        }
+
+        .child {
+            /* 20px */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        I am parent
+        <div class="child">
+            I am child
+            <div class="grandchild">
+                I am grand child
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
