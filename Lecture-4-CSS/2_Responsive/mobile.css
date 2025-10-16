@@ -1,0 +1,25 @@
+.section {
+    /* border: 1px solid orange; */
+    height: calc(100vh - 60px);
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    width: 100%;
+}
+
+.test-font {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    align-content: center;
+}
+
+.burger-icon {
+    display: block;
+}
+
+.nav-element-1 {
+    display: none;
+}
