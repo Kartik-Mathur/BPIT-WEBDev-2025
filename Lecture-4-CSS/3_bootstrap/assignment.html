@@ -5,41 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <script src="./bootstrap.js"></script>
 
+
+    <style>
+        .section {
+            height: calc(100vh - 60px);
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="">
-        <div class="">
+    <nav class="container-fluid">
+        <!-- <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path fill="currentColor"
                     d="M20.6 17.51a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17zm0-6a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17zm0-6a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17z">
                 </path>
             </svg>
-        </div>
+        </div> -->
 
-        <div class="">
-            NAV-1
-        </div>
-        <div class="">
-            NAV-2
+        <div class="row justify-content-between" style="height: 60px;">
+            <div
+                class="col-4 h-100 d-none d-md-block border border-dark bg-danger text-white d-flex justify-content-center align-items-center fs-1">
+                NAV-1
+            </div>
+
+            <div class="col-2 d-md-none d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="black"
+                        d="M20.6 17.51a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17zm0-6a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17zm0-6a.5.5 0 0 1 0 .98l-.1.01h-17a.5.5 0 0 1 0-1h17z">
+                    </path>
+                </svg>
+            </div>
+
+            <div
+                class="col-9 col-md-4 h-100 border border-dark bg-danger text-white d-flex justify-content-center align-items-center fs-1">
+                NAV-2
+            </div>
         </div>
     </nav>
 
 
-    <div class="">
-        <section class="">
-            SECTION - 1
-        </section>
-        <section class="">
-            SECTION - 2
-        </section>
-        <section class="">
-            SECTION - 3
-        </section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section
+                class="section border border-dark col-12 col-md-6 col-xl-4 fs-1 d-flex justify-content-center align-items-center">
+                SECTION - 1
+            </section>
+            <section
+                class="section border border-dark col-12 col-md-12 order-md-1 order-xl-0 col-xl-4 fs-1 d-flex justify-content-center align-items-center">
+                SECTION - 2
+            </section>
+            <section
+                class="section border border-dark col-12 col-md-6 col-xl-4 fs-1 d-flex justify-content-center align-items-center">
+                SECTION - 3
+            </section>
+        </div>
     </div>
 
+
+
+    <!-- NAVBAR CANVAS -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
 </body>
