@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    margin-top: 65px;
 }
 
 .section-a {
@@ -30,5 +31,5 @@
 
 .explore-articles .follow-list {
     position: sticky;
-    top: 10px;
+    top: 80px;
 }
