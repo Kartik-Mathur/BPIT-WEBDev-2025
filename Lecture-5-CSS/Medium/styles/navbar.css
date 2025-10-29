@@ -1,0 +1,110 @@
+.navbar {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: aqua; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-element {
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.nav-element-1 {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.nav-element-2 {
+    width: 22%;
+}
+
+.nav-element div {
+    /* border: 1px solid black; */
+}
+
+.burger-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo svg {
+    width: 80%;
+    color: rgb(102, 102, 102);
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon,
+.search-input {
+    height: 30px;
+    background-color: #e8e8e8;
+}
+
+.search-icon {
+    width: 20%;
+    border: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search-icon svg {
+    border: 0;
+}
+
+.search-input {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search-input {
+    outline: none;
+}
+
+
+
+
+
+
+/* ---------------- SECTION B CSS  ----------------*/
+.write-article{
+    width: 30%;
+}
+
+.notification,
+.profile-picture{
+    width: 25%;
+}
+
+.profile-picture img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+/* ---------------- SECTION B CSS  ----------------*/
