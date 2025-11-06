@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounce Project</title>
     <style>
-        body{
+        body {
             background-image: url('./image.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        .ball{
+        .ball {
             background-color: darkgreen;
             border: 4px solid black;
             border-radius: 50%;
@@ -20,14 +21,84 @@
             position: fixed;
             top: 400px;
             left: 900px;
+            animation: ballbounce 4s ease-in-out forwards infinite;
+            z-index: 10;
+        }
+
+        @keyframes ballbounce {
+            0% {
+                top: 400px;
+            }
+
+            45% {
+                top: 740px;
+                height: 48px;
+            }
+
+            50% {
+                top: 750px;
+                height: 46px;
+            }
+
+            55% {
+                top: 750px;
+                height: 48px;
+            }
+
+            100% {
+                top: 400px;
+            }
+        }
+
+        @keyframes ballshadow {
+            0% {
+                left: 1200px;
+            }
+
+            45% {
+                left: 920px;
+                /* height: 48px; */
+            }
+
+            50% {
+                left: 919px;
+                height: 38px;
+                width: 55px;
+            }
+
+            55% {
+                left: 920px;
+                /* height: 48px; */
+            }
+
+            100% {
+                left: 1200px;
+            }
+        }
+
+        .ball-shadow {
+            width: 60px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.602);
+            position: fixed;
+            border-radius: 60%;
+            top: 780px;
+            left: 1200px;
+            animation: ballshadow 4s ease-in-out forwards infinite;
         }
     </style>
+
+
 </head>
+
 <body>
 
     <h1>Project Bounce</h1>
 
     <div class="ball"></div>
-    
+
+    <div class="ball-shadow"></div>
+
 </body>
+
 </html>
