@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="movieList"></ul>
+
+    <script>
+        let movieList = document.querySelector('.movieList');
+
+
+
+        let movieData = ["hulk", 'thor', 'ironman'];
+        /*
+        movieData.forEach((m) => {
+            // console.log(m)
+            // String is immutable in JS
+            // Will take O(n) time to add one element
+            movieList.innerHTML += `<li class="movie">${m}</li>`
+        })
+        */
+        movieData.forEach((m) => {
+            let li = document.createElement('li');
+            li.innerText = m;
+            movieList.appendChild(li); // O(1) time to add one element
+        })
+
+    </script>
+</body>
+
+</html>
